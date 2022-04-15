@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="container" id="cont">
+    <img src="https://images.unsplash.com/photo-1616400619175-5beda3a17896?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bmlnaHQlMjB0YWJsZXxlbnwwfHwwfHw%3D&w=1000&q=80" alt="">
+    
+    <div class="calc">
+    
+       
+            <input type="text" id="display">
+            
+    <!-- <button id="on" class="numbers" onclick="accendi(this)">ON</button>
+    <button id="off" class="numbers" onclick="spegni(this)">OFF</button> -->
+    <button class="numbers" onclick="aggiungiNumero(this)">1</button>
+    <button class="numbers" onclick="aggiungiNumero(this)">2</button>
+    <button class="numbers" onclick="aggiungiNumero(this)">3</button>
+    
+    <button class="symbol" onclick="aggiungiNumero(this)">+</button>
+    <button class="symbol" onclick="aggiungiNumero(this)">-</button>
+
+    <button class="numbers" onclick="aggiungiNumero(this)">4</button>
+    <button class="numbers" onclick="aggiungiNumero(this)">5</button>
+    <button class="numbers" onclick="aggiungiNumero(this)">6</button>
+    
+    <button class="symbol" onclick="moltiplicazione()">x</button>
+    <button class="symbol" onclick="aggiungiNumero(this)">/</button>
+    
+    <button class="numbers" onclick="aggiungiNumero(this)">7</button>
+    <button class="numbers" onclick="aggiungiNumero(this)">8</button>
+    <button class="numbers" onclick="aggiungiNumero(this)">9</button>
+    <button id="canc" class="symbol" onclick="cancella()">Canc</button>
+    
+    <button class="numbers" onclick="aggiungiNumero(this)">0</button>
+    <button class="numbers" onclick="aggiungiNumero(this)">00</button>
+    <button class="numbers" onclick="aggiungiNumero(this)">.</button>
+    <button id="uguale" class="symbol" onclick="risultato()">=</button>
+
+    
+</div>
+    
+</div>   
+<!-- <audio src="audio/Button-Plate Click (Minecraft Sound) - Sound Effect for editing.mp3" id="Click"></audio> -->
+    <script src="js/script.js"></script>
+</body>
+</html>
