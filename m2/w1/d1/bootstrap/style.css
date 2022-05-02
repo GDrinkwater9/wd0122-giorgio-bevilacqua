@@ -1,0 +1,17 @@
+.btn-primary{
+    background-color: aqua;
+    border-color: black;
+    color: black;
+}
+
+.bg-primary{
+    background-color: aqua;
+}
+.container.container-con-bordo{
+    border: 1px solid black;
+}
+
+.accordion-button.accordion-rosso:not(.collapsed){
+    background-color: red;
+    color: white;
+}
