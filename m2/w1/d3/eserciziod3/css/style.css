@@ -1,0 +1,38 @@
+header {
+  background-color: blueviolet; }
+  header li {
+    display: inline;
+    list-style: none;
+    padding: 0 5px; }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem; }
+  header a {
+    color: white;
+    text-decoration: none; }
+  header .showcase-content {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  header img {
+    margin: 40px; }
+
+.showcase-content a:hover {
+  background-color: black;
+  transition: all 0.5s; }
+
+.showcase-content .btn-primary {
+  background-color: royalblue;
+  padding: 15px;
+  border-radius: 5%; }
+
+.showcase-content .btn-secondary {
+  background-color: orange;
+  padding: 15px;
+  border-radius: 5%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif; }

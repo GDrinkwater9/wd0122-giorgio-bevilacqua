@@ -1,0 +1,34 @@
+header{
+    background-color:blueviolet;
+    
+       li{
+         display: inline;
+         list-style: none;
+         padding: 0 5px;
+         }
+         nav{
+             display: flex;
+             justify-content: space-between;
+             padding: 2rem;
+            }
+            
+        a{
+        color: $bianco ;
+        text-decoration: none;
+        
+        }
+    
+   
+       .showcase-content{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        }
+        
+        img{
+            margin: 40px;
+        }
+    }
+    
+ 
+    
