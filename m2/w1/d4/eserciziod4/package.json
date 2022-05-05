@@ -1,0 +1,11 @@
+{
+  "name": "eserciziod4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "esercizio": "node-sass scss/style.scss css/main.css -w"
+  },
+  "author": "",
+  "license": "ISC"
+}

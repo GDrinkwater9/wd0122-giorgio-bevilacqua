@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Orbitron&display=swap");
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+a {
+  font-style: italic;
+  text-decoration: none; }
+
+header {
+  background-color: #05055c;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow: 0px 0px 5px 1px orange; }
+  header li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px; }
+  header a {
+    font-style: italic;
+    text-decoration: none;
+    color: #fff; }
+
+#main {
+  display: flex;
+  padding-left: 40px; }
+  #main li {
+    list-style: none;
+    border-bottom: 2px dotted lightgrey;
+    width: 90%; }
+  #main a {
+    color: orange;
+    font-weight: bold; }
+  #main .warning-button {
+    background-color: orange;
+    padding: 10px;
+    border-top: none;
+    border-left: none;
+    color: white; }
+  #main article {
+    flex-basis: 75%; }
+  #main aside {
+    flex-basis: 25%; }
+
+#footer {
+  background-color: royalblue;
+  padding: 30px; }

@@ -1,0 +1,74 @@
+@import 'functions';
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Orbitron&display=swap');
+
+
+@mixin corsivo {
+    font-style: italic;
+    text-decoration: none;
+}
+
+@mixin lista{
+    list-style: none;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+  @include corsivo;  
+}
+
+header{
+    background-color: rgb(5, 5, 92);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px 1px orange;
+    li{
+        @include lista;
+        display: inline-block;
+        padding: 10px;
+    }
+    a{
+        @include corsivo;
+        color: set-color(rgb(5, 5, 92))
+        
+    }
+}
+
+#main{
+    display: flex;
+    padding-left: 40px;
+    li{
+        @include lista;
+        border-bottom: 2px dotted lightgrey;
+        width: 90%;
+    }
+    a{
+        color: orange;
+        font-weight: bold;
+    }
+    .warning-button{
+        background-color: orange;
+        padding: 10px;
+        border-top: none;
+        border-left: none;
+        color: white;
+
+    }
+    article{
+        
+        flex-basis: 75%;
+    }
+    aside{
+        flex-basis: 25%;
+    }
+}
+
+#footer{
+    background-color: royalblue;
+    padding: 30px;
+}
+
