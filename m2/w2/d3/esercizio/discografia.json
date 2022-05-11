@@ -1,0 +1,54 @@
+{
+    "discografia": [
+        {
+            "title": "A Night at the Opera",
+            "year": 1975,
+            "artist": "Queen",
+            "songs": [
+                {
+                    "title": "Bohemian Rhapsody"
+                },
+                {
+                    "title": "Love of my life"
+                },
+                {
+                    "title": "Seaside Rendezvous"
+                },
+                {
+                    "title": "'39"
+                },
+                {
+                    "title": "God Save the Queen"
+                },
+                {
+                    "title": "Lazing on a Sunday Afternoon"
+                }
+            ]
+        },
+        {
+            "title": "Appetite for Destruction",
+            "year": 1987,
+            "artist": "Guns N'Roses",
+            "songs": [
+                {
+                    "title": "Welcome to the Jungle"
+                },
+                {
+                    "title": "Paradise City"
+                },
+                {
+                    "title": "Sweet Child o' Mine"
+                },
+                {
+                    "title": "You're Crazy"
+                },
+                {
+                    "title": "My Michelle"
+                },
+                {
+                    "title": "Rocket Queen"
+                }
+            ]
+        }
+    ]
+}
