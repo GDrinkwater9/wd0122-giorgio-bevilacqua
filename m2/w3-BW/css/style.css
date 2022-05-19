@@ -1,9 +1,13 @@
-/* .displayUser{
+ .displayUser{
     display:none;
 }
 .visibile{
     display:block;
-} */
+} 
+
+.caricamento{
+margin-left: -20vw;
+}
 
 .counter{
     font-size: 40px;

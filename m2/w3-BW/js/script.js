@@ -14,6 +14,33 @@ let indirizzo = document.querySelector('#indirizzo')
 let azienda = document.querySelector('#azienda')
 let telefono = document.querySelector('#telefono')
 
+// barra di ricerca
+
+let ricerca = document.querySelector('#ricerca')
+
+let btnRicerca = document.querySelector('#btnRicerca')
+
+btnRicerca.addEventListener('click',function(e){
+    e.preventDefault()
+    let testo = ricerca.value
+    let testoMin = testo.toLowerCase()
+    
+    i = 0
+     let nomi = document.querySelectorAll('.nome')
+     for(n of nomi){
+        let x = n.innerHTML.toLowerCase()
+        console.log(x);
+         if(x.includes(testoMin)){
+            document.querySelectorAll('tbody tr')[i].classList.remove('displayUser')
+
+          }else{
+            document.querySelectorAll('tbody tr')[i].classList.add('displayUser')
+          }
+          i++
+     }
+
+})
+
 
 fetch("http://jsonplaceholder.typicode.com/users")
 .then(res => res.json())
@@ -40,7 +67,7 @@ fetch("http://jsonplaceholder.typicode.com/users")
 
 
         let vedi = document.createElement('button')
-        vedi.classList.add('btn','bg-info','col-12','mt-2')
+        vedi.classList.add('btn','bg-info','col-12','mt-2','text-light')
         vedi.setAttribute('data-bs-toggle','modal')
         vedi.setAttribute('data-bs-target','#modal3')
         vedi.innerHTML = 'View'
@@ -149,6 +176,7 @@ fetch("http://jsonplaceholder.typicode.com/users")
 
         td.append(vedi,modifica,elimina)
 
+        tdNome.classList.add('nome')
 
         tr.append(tdId,tdNome,tdUsername,tdEmail,td)
 
@@ -254,6 +282,4 @@ cambia.addEventListener('click',function(e){
         }
     })
 })
-
-
 
