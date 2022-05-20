@@ -24,20 +24,31 @@ btnRicerca.addEventListener('click',function(e){
     e.preventDefault()
     let testo = ricerca.value
     let testoMin = testo.toLowerCase()
-    
-    i = 0
-     let nomi = document.querySelectorAll('.nome')
-     for(n of nomi){
-        let x = n.innerHTML.toLowerCase()
-        console.log(x);
-         if(x.includes(testoMin)){
-            document.querySelectorAll('tbody tr')[i].classList.remove('displayUser')
+    let righe = document.querySelectorAll('tbody tr')
 
-          }else{
-            document.querySelectorAll('tbody tr')[i].classList.add('displayUser')
-          }
-          i++
-     }
+    for(r of righe){
+        let trovato = false
+        let tutto = r.querySelectorAll('.tutto')
+        for(let t of tutto){
+            let x = t.innerHTML.toLowerCase()
+            
+            if(x.includes(testoMin)){
+                trovato = true 
+            }
+            
+        }
+        if(trovato){
+            r.classList.remove('displayUser')
+        }else{
+            r.classList.add('displayUser')
+        }
+    }
+    
+    let i = 0
+    let tutto = document.querySelectorAll('.tutto')
+    
+
+    
 
 })
 
@@ -176,7 +187,10 @@ fetch("http://jsonplaceholder.typicode.com/users")
 
         td.append(vedi,modifica,elimina)
 
-        tdNome.classList.add('nome')
+        tdNome.classList.add('tutto')
+        tdUsername.classList.add('tutto')
+        tdId.classList.add('tutto')
+        tdEmail.classList.add('tutto')
 
         tr.append(tdId,tdNome,tdUsername,tdEmail,td)
 
@@ -282,4 +296,3 @@ cambia.addEventListener('click',function(e){
         }
     })
 })
-
