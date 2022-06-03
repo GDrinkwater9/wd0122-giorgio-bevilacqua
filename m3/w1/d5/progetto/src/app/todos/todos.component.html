@@ -1,0 +1,29 @@
+
+
+    <nav>
+        <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Todos</a>
+        <a [routerLink]="['/completed']" routerLinkActive="active">Completi</a>
+    </nav>
+<!-- 
+    <div class="elenco" *ngFor="let tasks of task">
+     {{tasks.title}}
+     <button>Completati</button>
+    </div> -->
+
+    <ng-container *ngIf="task; else loading">
+        <div class="elenco" *ngFor="let tasks of task">
+            {{tasks.title}}
+            <button (click)="completa(tasks.id)">Completa</button>
+        </div>
+
+    </ng-container>
+
+    <ng-template #loading>Caricamento in corso..</ng-template>
+
+    <ng-template #empty>Non ci sono todo</ng-template>
+    
+    <form>
+        <input type="text">
+        <button>+</button>
+    </form>
+
