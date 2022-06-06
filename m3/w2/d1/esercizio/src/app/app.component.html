@@ -1,0 +1,12 @@
+<h1>Esercizio</h1>
+<div class="container">
+
+
+<h2>Foto che mi piacciono {{count}}</h2>
+<div id="foto" *ngFor="let photo of photo">
+  {{photo.title}}
+  <img src={{photo.url}} >
+  <button class="btn btn-success mt-2" (click)="like()">Mi Piace</button>
+</div>
+</div>
+<router-outlet></router-outlet>
