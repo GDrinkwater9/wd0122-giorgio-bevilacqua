@@ -1,0 +1,45 @@
+<div class="container my-5">
+    <h1>Driven Forms</h1>
+    <form (ngSubmit)="submit()" #f="ngForm">
+        <div ngModelGroup="authData" #authGroup="ngModelGroup">
+        <div class="form-group" >
+            <label  class="h5" for="nome">Nome</label>
+            <input #nome="ngModel" ngModel name="nome" required id="nome" type="text" class="form-control" placeholder="Nome">
+            <div class="alert alert-danger" role="alert" 
+            [style.color]="'red'" *ngIf="nome.invalid && nome.touched">Devi compilare questo campo</div>
+            
+        </div>
+        <div class="form-group">
+            <label class="h5" for="alterEgo">Alter Ego</label>
+            <input #alterEgo="ngModel" ngModel name="alterEgo" required id="alterEgo" type="text" class="form-control" placeholder="Alter Ego">
+            <div class="alert alert-danger" role="alert" 
+            [style.color]="'red'" *ngIf="alterEgo.invalid && alterEgo.touched">Devi compilare questo campo</div>
+        </div>
+        <div class="form-group">
+        <label class="h5" for="superPotere">Super Potere</label>
+            <select id="superPotere" ngModel name="superPotere" class="form-control">
+                <option value="">Seleziona</option>
+                <option value="Super Forza">Super Forza</option>
+                <option value="Invisibilità">Invisibilità</option>
+                <option value="Velocita">Velocità</option>
+                <option value="Volare">Saper Volare</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="h5" for="Nemico">Nemico</label>
+            <input maxlength="10" #nemico="ngModel" ngModel name="nemico" id="nemico" type="text" class="form-control" placeholder="Nemico">
+        </div>
+        <div class="form-group">
+            <label class="h5" for="pianeta">Pianeta</label>
+            <input minlength="5" #pianeta="ngModel" ngModel name="pianeta" required id="pianeta" type="text" class="form-control" placeholder="Pianeta">
+            <div class="alert alert-danger" role="alert"
+            [style.color]="'red'" *ngIf="pianeta.invalid && pianeta.touched">Devi compilare questo campo</div>
+        </div>
+        <div class="form-group">
+            <label class="h5" for="debolezza">Debolezza</label>
+            <input #debolezza="ngModel" ngModel name="debolezza" id="debolezza" type="text" class="form-control" placeholder="Debolezza">
+        </div>
+        <button [disabled]="!f.valid" class="col-12 btn btn-primary mt-2">Crea</button>
+    </div>
+        </form>
+</div>
