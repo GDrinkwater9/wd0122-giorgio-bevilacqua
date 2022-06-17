@@ -1,0 +1,43 @@
+
+<table>
+    <button class="btn btn-success mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="visible2 = !visible2">create new post</button>
+    <tr class="head">
+        <td>id</td>
+        <td>title</td>
+        <td>body</td>
+        <td></td>
+        <td></td>
+    </tr>
+   <tr *ngFor="let book of books">
+        <td>{{book.id}}</td>
+        <td>{{book.title}}</td>
+        <td>{{book.body}}</td>
+        <td><button class="btn btn-success" (click)="openupdate(book);visible = !visible;">update post</button></td>
+        <td><button class="btn btn-danger" (click)="delete(book.id!)" >elimina post</button></td>
+    </tr> 
+</table>
+
+<div  id="update" #update *ngIf="visible" >
+    <h2>update post</h2>
+<form >
+    <input type="number" class="form-control my-2"  nome="id" *ngIf="visible3"  [(ngModel)]="id" placeholder="id" [ngModelOptions]="{standalone: true}">
+    <input type="text" class="form-control my-2" nome="title" [(ngModel)]="title"  placeholder="title" [ngModelOptions]="{standalone: true}">
+    <input type="text" class="form-control my-2" nome="body" [(ngModel)]="body" placeholder="body" [ngModelOptions]="{standalone: true}">
+    <button class="btn btn-primary" (click)="modifica()">update</button>
+</form>
+</div>
+
+
+<div id="update" *ngIf="visible2">
+    <h2>create new post</h2>
+<form>
+    <input type="text" class="form-control my-2" nome="title" [(ngModel)]="title" placeholder="title" [ngModelOptions]="{standalone: true}">
+    <input type="text" class="form-control my-2" nome="body" [(ngModel)]="body" placeholder="body" [ngModelOptions]="{standalone: true}">
+    <button class="btn btn-primary" (click)="create();getposts()">create</button>
+</form>
+</div>
+
+
+
+
+

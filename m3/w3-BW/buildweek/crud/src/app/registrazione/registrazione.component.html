@@ -1,0 +1,10 @@
+<div class="container">
+<h1>Registrazione</h1>
+<form action="">
+    <input  class="form-control my-2" type="text" [(ngModel)]="authData.nome" name="nome" placeholder="nome">
+    <input  class="form-control my-2" type="text" [(ngModel)]="authData.cognome" name="cognome" placeholder="cognome">
+    <input  class="form-control my-2" type="email" [(ngModel)]="authData.email" name="email" placeholder="email">
+    <input  class="form-control my-2" type="password" [(ngModel)]="authData.password" name="password" placeholder="password">
+    <button (click)="register()" class="btn btn-primary m-3">Registrati</button>
+</form>
+</div>

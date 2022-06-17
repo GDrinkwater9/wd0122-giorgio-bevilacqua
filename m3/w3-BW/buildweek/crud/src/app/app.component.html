@@ -1,0 +1,20 @@
+
+
+
+  <div id="primo">
+
+    <ul>
+      <li style="--i:5;"><a [routerLink]="['/home']">Home</a></li>
+      <li style="--i:4;"><a [routerLink]="['/crud']">crud</a></li>
+      <li style="--i:3;"><a [routerLink]="['/login']">Login</a></li>
+      <li style="--i:2;"><a [routerLink]="['/registrazione']">register</a></li>
+      <li style="--i:1;"><a (click)="logout()">logout</a></li>
+
+  </ul>
+
+</div>
+
+
+<router-outlet></router-outlet>
+
+

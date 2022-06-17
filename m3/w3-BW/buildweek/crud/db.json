@@ -1,0 +1,68 @@
+{
+  "users": [
+    {
+      "email": "ale@ale.com",
+      "password": "$2a$10$/FG8p0mwrg9USiqxeuRyjOsTYDdL.3w2w86/l7HXWGtmRKYwffxju",
+      "nome": "le",
+      "cognome": "dio",
+      "id": 1
+    },
+    {
+      "email": "olo@olo.com",
+      "password": "$2a$10$oxz8iENVekmJXUgm.Irwrub2ELHTrF6aJAFwx/McoR7hIuSEDrVqa",
+      "nome": "avgr",
+      "cognome": "aaerg",
+      "id": 2
+    },
+    {
+      "email": "dio@dio.com",
+      "password": "$2a$10$d9kjQM6kJiBuGfCU5vc7AubrIvb3wthM2SvKlZFgYCz2FaFpUBdSa",
+      "nome": "wqr",
+      "cognome": "wer",
+      "id": 3
+    },
+    {
+      "email": "cane@cane.com",
+      "password": "$2a$10$vjaSOh3T.QIW/V95OgpelO7cJFwrSBth2CFrooZE4YQPPZyLjAdse",
+      "id": 4
+    },
+    {
+      "email": "porco@porco.com",
+      "password": "$2a$10$HfhiUbvhk77Nu4URllyqh.CpJKQu4KNL1vno..vnnxrV103EOPICO",
+      "nome": "serh",
+      "cognome": "rsth",
+      "id": 5
+    },
+    {
+      "email": "info@massi.com",
+      "password": "$2a$10$9KDbhRbCdBROqNMCnI/rN.oxcPCsJ0yW8QXLeuvlqqeG/RBsz18KK",
+      "nome": "Massimiliano",
+      "cognome": "Greco",
+      "id": 6
+    },
+    {
+      "email": "gino@gino.com",
+      "password": "$2a$10$JRHztfv6yHg7qLRg2RYqxevDS2RhGvJ8YkUw6V3RBNNYIIwhaegg6",
+      "nome": "gino gino",
+      "cognome": "gino",
+      "id": 7
+    }
+  ],
+  "posts": [
+    {
+      "title": "Se una notte d'inverno un viaggiatore",
+      "body": "Se una notte d'inverno un viaggiatore è un romanzo di Italo Calvino pubblicato nel 1979.",
+      "id": 1
+    },
+    {
+      "title": "Il cacciatore di aquiloni",
+      "body": "Il cacciatore di aquiloni è il primo romanzo dello scrittore statunitense di origine afghana Khaled Hosseini, pubblicato nel 2003 ed edito in Italia dalle Edizioni Piemme nel 2004 con la traduzione di Isabella Vaj.",
+      "id": 2
+    },
+    {
+      "title": "Alchimista",
+      "body": "Una storia di Paulo Coelho...768",
+      "id": 3
+    }
+  ]
+}
