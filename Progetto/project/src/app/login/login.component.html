@@ -1,0 +1,32 @@
+
+
+  <div class="container col-xl-10 col-xxl-8 px-4 py-5" >
+    <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-lg-7 text-center text-lg-start">
+        <h1 class="display-4 fw-bold lh-1 mb-3">Buon divertimento</h1>
+        <p class="col-lg-10 fs-4">I tuoi "Team-Mates" ti aspettano, corri da loro</p>
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5">
+        <form class="p-4 p-md-5 border rounded-3 bg-light" id="card">
+          <h1>Login</h1>
+          <div class="form-floating mb-3">
+            <input type="email" name="email" placeholder="Email" [(ngModel)]="authData.email" class="form-control">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" name="password" placeholder="Password" [(ngModel)]="authData.password" class="form-control my-2">
+            <label for="floatingPassword">Password</label>
+          </div>
+         
+          <button class="btn btn-warning my-2 mx-2 w-100" (click)="login()">Accedi</button>
+          <hr class="my-4">
+          <a  [routerLink]="['/register']">Non sei Registrato?</a>
+          <small class="text-muted"></small>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  

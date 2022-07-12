@@ -1,0 +1,36 @@
+
+  <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-lg-7 text-center text-lg-start">
+        <h1 class="display-4 fw-bold lh-1 mb-3">Entra anche tu a far parte di questa community</h1>
+        <p class="col-lg-10 fs-4">"Team-Mates" ti aiuterà a trovare players di ogni livello,il divertimento è garantito</p>
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5" >
+        <form class="p-4 p-md-5 border rounded-3 bg-light" id="card">
+          <h1>Sign-Up</h1>
+          <div class="form-floating mb-3">
+
+            
+            <input type="text" name="username" placeholder="Username" [(ngModel)]="authUser.username" class="form-control">
+            <label for="floatingPassword">Username</label>
+
+          </div>
+          <div class="form-floating mb-3">
+            
+            <input type="email" name="email" placeholder="Email" [(ngModel)]="authUser.email" class="form-control">
+            <label for="floatingInput">Email address</label>
+
+          </div>
+          <div class="form-floating mb-3">
+          
+            <input type="password" name="password" placeholder="Password" [(ngModel)]="authUser.password" class="form-control my-2">
+            <label for="floatingPassword">Password</label>
+          </div>
+         
+          <button class="btn btn-warning my-2 w-100" (click)="register()">Salva</button>
+          <hr class="my-4">
+          <small class="text-muted"></small>
+        </form>
+      </div>
+    </div>
+  </div>

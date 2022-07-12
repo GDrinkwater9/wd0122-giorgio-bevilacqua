@@ -1,0 +1,140 @@
+{
+  "users": [
+    {
+      "email": "admin@admin.com",
+      "password": "$2a$10$062Sun2GUt2zclzLdRYW/.BjcOsyNv5Hvb9EUzWpBoTstxqputzmq",
+      "username": "admin",
+      "id": 1
+    },
+    {
+      "email": "gino@gino.com",
+      "password": "$2a$10$y0JtUogO66jQnOFb6r/buOmFjH/0Ki0Gye33wFyy1lDyzynSJDBVm",
+      "username": "sasa",
+      "id": 2
+    },
+    {
+      "email": "gigi@gigi.com",
+      "password": "$2a$10$EAidcyWMeyZwaPBvXNFFBeUVNT5jGK6YgxOMqHv.YtSAmoO51jixC",
+      "username": "Gigi",
+      "id": 3
+    },
+    {
+      "email": "pippo@pippo.com",
+      "password": "$2a$10$minXqvUdW85u7e/0noxqfenl5mV1zhuCzZwq4RcRPPnYYmmvkC6iG",
+      "username": "pippo",
+      "id": 4
+    },
+    {
+      "email": "lino@lino.com",
+      "password": "$2a$10$cSxQ01Kcce./mKp4xd6sHe2lfMsuhQUwosVlgmWB2esdLfyiqKcpW",
+      "username": "lino",
+      "id": 5
+    },
+    {
+      "email": "sasas@sasa.com",
+      "password": "$2a$10$s6O5oqzz5WmtxDkPt6EYBOuHMk4clxMwmPBKxdsF5pI.CjK4idyP2",
+      "username": "sasasa",
+      "id": 6
+    },
+    {
+      "email": "tua.email@email.com",
+      "password": "$2a$10$stkiSGrh3XcEdGP9SWd1zuh387PeYAyP9G6L2Hg3ObIjNP5a4NL9.",
+      "username": "email",
+      "id": 7
+    },
+    {
+      "email": "pinco@pallino.com",
+      "password": "$2a$10$.f98/EQm5NaeVhl0XEb9B.Ubo3RKo3OiWrSnFYUdSz10uRh/sQg9O",
+      "username": "pinco",
+      "id": 8
+    }
+  ],
+  "posts": [
+    {
+      "date": "2022-07-05",
+      "time": "14:49",
+      "platform": "Xbox",
+      "players": "7",
+      "text": "Call of Duty",
+      "description": "gg",
+      "gamertag": "ezclap",
+      "authorId": 2,
+      "authorName": "sasa",
+      "prenotato": [],
+      "id": 2
+    },
+    {
+      "date": "2022-06-29",
+      "time": "16:48",
+      "platform": "Xbox",
+      "players": "2",
+      "text": "GDrinkwater",
+      "description": "gg",
+      "gamertag": "Gdrink",
+      "authorId": 2,
+      "authorName": "sasa",
+      "prenotato": [],
+      "id": 3
+    },
+    {
+      "date": "2022-08-03",
+      "time": "20:08",
+      "platform": "PC",
+      "players": "3",
+      "text": "GDrinkwater",
+      "description": "gg",
+      "gamertag": "Gdrink",
+      "authorId": 1,
+      "authorName": "admin",
+      "prenotato": [],
+      "id": 4
+    },
+    {
+      "date": "2022-08-04",
+      "time": "15:19",
+      "platform": "PC",
+      "players": "2",
+      "text": "GDrinkwater",
+      "description": "gg",
+      "gamertag": "Gdrink",
+      "authorId": 1,
+      "authorName": "admin",
+      "prenotato": [
+        2
+      ],
+      "id": 6
+    },
+    {
+      "date": "2022-07-15",
+      "time": "19:42",
+      "platform": "PC",
+      "players": "3",
+      "text": "sssssssss",
+      "description": "aaaaaaaa",
+      "gamertag": "Gdrink",
+      "authorId": 2,
+      "authorName": "sasa",
+      "prenotato": [],
+      "id": 7
+    }
+  ],
+  "prenotazioni": [
+ 
+    {
+      "idLobby": 4,
+      "idHost": 1,
+      "idPlayer": 2,
+      "idNamePlayer": "sasa",
+      "id": 2
+    },
+    {
+      "idLobby": 6,
+      "idHost": 1,
+      "idPlayer": 2,
+      "idNamePlayer": "sasa",
+      "id": 3
+    }
+    
+    
+  ]
+}

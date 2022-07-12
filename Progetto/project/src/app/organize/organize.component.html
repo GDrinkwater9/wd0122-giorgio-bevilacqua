@@ -1,0 +1,53 @@
+
+<div class="container py-5" id="featured-3">
+<div class="row g-4 py-5 row-cols-1 row-cols-lg-2 ">
+      
+    <div class="feature col">
+    
+    <h2>Organizza una Lobby</h2>
+    <p>Compila i seguenti campi</p>
+    
+    <form >
+        <input type="date" name="data" id="calendar" class="form-control" [(ngModel)]="post.date" >
+        <input type="time" name="time" id="time" class="form-control my-2" [(ngModel)]="post.time" >
+        <select class="form-select lg-w-25  my-2" name="platform" aria-label="Default select example" [(ngModel)]="post.platform">
+            <option value="">Piattaforma</option>
+            <option value="Xbox">Xbox</option>
+            <option value="Playstation">Playstation</option>
+            <option value="PC">PC</option>
+            <option value="Nintendo Switch">Nintendo Switch</option>
+          </select>
+         
+        <select class="form-select lg-w-25  my-2" name="players" aria-label="Default select example" [(ngModel)]="post.players">
+            <option value="">Players Richiesti</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="12">11</option>
+          </select>
+          
+          <input type="text" class="form-control lg-w-25 " name="gamertag" id="gamertag" placeholder="Gamertag" [(ngModel)]="post.gamertag">
+          <input type="text" class="form-control lg-w-25 my-2 " name="text" id="text" placeholder="Videogame" [(ngModel)]="post.text">
+          <input type="text" class="form-control lg-w-25 my-2 " name="description" id="description" placeholder="Descrizione" [(ngModel)]="post.description">
+          <button class="shadow btn btn-warning my-2" (click)="addPost()">Salva</button>
+    </form>
+  </div>
+
+  <div class="feature col">
+    <h2>Community</h2>
+    <p>
+      Lo scopo di "Team-Mates" è quello di riunire tutti i Players in una piattaforma, organizzare partite e instaurare nuove amicizie. Da oggi in poi, non sarai più da solo.
+      Buon Divertimento!
+    </p>
+  
+  </div>
+</div>
+
+</div>

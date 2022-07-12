@@ -1,0 +1,30 @@
+
+  <nav *ngIf="UserLoggedIn" class="navbar navbar-dark bg-dark w-100" aria-label="Dark offcanvas navbar" id="nav">
+    <div class="container-fluid">
+      <a id="title" [routerLink]="['/home']" class="nav-link text-white">Team-Mates</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-white bg-dark" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Team-Mates</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+       <a [routerLink]="['/home']" class="nav-link text-white">Home</a>
+            </li>
+            <li class="nav-item">
+              <a id="icon-p" [routerLink]="['/profilo']" i class="bi bi-person-square nav-link text-white "> {{utente.username}}</a>
+            </li>
+            
+          
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <button class="btn btn-warning " (click)="logout()">Logout</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>

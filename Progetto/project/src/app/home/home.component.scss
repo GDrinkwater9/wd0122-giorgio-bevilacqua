@@ -1,0 +1,21 @@
+#card-bg{
+    background: rgb(163,8,251);
+    background: linear-gradient(90deg, rgba(163,8,251,1) 0%, rgba(24,1,32,1) 100%);
+    width: 100%;
+    padding: 1em;
+    color: white;
+}
+.card{
+    box-shadow: 11px 8px 25px -17px #000000;
+}
+#album{
+    box-shadow: 11px 8px 25px -17px #000000;
+    border-radius: 10px;
+}
+#post{
+    box-shadow: 1px 0px 10px 2px #b3b3b3;}
+h5{
+    font-family: 'Economica', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+}

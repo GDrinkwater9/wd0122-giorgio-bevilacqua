@@ -1,0 +1,62 @@
+
+<div class="container col-xl-10 col-xxl-8 px-4 py-5">
+
+
+<div class="row align-items-center g-lg-5 py-5 my-5">
+    <div class="col-md-10 mx-auto col-lg-5 g-sm-5 my-2">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-header my-2">Lobby Create</h5>
+
+          <div class="container-fluid">
+          <div class="card my-2" *ngFor="let post of lobby">
+            <div class="card-body">
+
+            <h5>Lobby N°:{{post.id}}</h5>
+            <h5>Data: {{post.date}}</h5>
+            <h5>Ora: {{post.time}}</h5>
+            <h5>Piattaforma: {{post.platform}}</h5>
+            <h5>Players Richiesti: {{post.players}}</h5>
+            <h5>Gioco: {{post.text}}</h5>
+            <h5>Commenti: {{post.description}}</h5>
+                   
+            </div>
+          </div>
+          <button id="org" class="btn btn-warning my-3" [routerLink]="['/organize']">Organizza una Lobby</button>
+        </div>
+          
+          <hr>
+          <h5 class="my-3">Prenotazioni</h5>
+         
+         <div class="card my-2" *ngFor="let p of prenotazioni">
+         <div class="card-body">
+
+        <h5>User: {{p.idNamePlayer}}</h5>
+        <h5>Prenotato alla Lobby n°: {{p.idLobby}}</h5>
+
+         
+      </div>
+      </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-10 mx-auto my-3 col-lg-5">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-header my-2">Info </h5>
+          <ul class="list-group">
+            <li class="list-group-item "><h6>Username:</h6><p >{{utente.username}}</p>
+              
+            </li>
+
+            <li class="list-group-item my-2"><h6>Email:</h6><p>{{utente.email}}</p></li>   
+            <li class="list-group-item"><h6>Password:</h6><p>**********</p></li>   
+          </ul>       
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

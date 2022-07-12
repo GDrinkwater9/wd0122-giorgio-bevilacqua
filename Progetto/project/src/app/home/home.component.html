@@ -1,0 +1,95 @@
+<div class="continer-fluid mt-5" id="main">
+ 
+<div class="container py-5" id="featured-3">
+  <h1>Ciao, {{utente.username}}</h1>
+  
+  <button id="org" class="shadow btn btn-warning my-3" [routerLink]="['/organize']">Organizza una Lobby</button>
+</div>
+
+<div class="container">
+
+
+<div class="row row-cols-1 row-cols-lg-1">
+  <div class="col-sm-12 col-md-12" >
+    <div class="card">
+      <div class="card-body">
+        <div id="card-bg">
+          <h4 class="card-title">LOBBY ORGANIZZATE</h4>
+        </div>
+        
+        
+      </div>
+    </div>
+    
+
+
+<div class="album py-5 bg-light my-5" id="album" >
+ 
+<div class="container">
+    <div class="row  g-5">
+      <div class="col-12 "*ngFor="let post of posts; let i = index">
+        
+        <div class="card shadow-sm" >
+          
+          <div class="card-body" id="post">
+            <div class="card-header">
+               <h6 class=" text-muted">Created by {{post.authorName}}</h6>
+            </div>
+            <ul class="list-group my-2">
+              <h5>Data:</h5><p *ngIf="!edit[i]">{{post.date}}</p> 
+              <input *ngIf="edit[i]" type="date" value="{{post.date}}" name="date" [(ngModel)]="post.date"  class="form-control">
+              
+              <h5>Ora:</h5><p *ngIf="!edit[i]">{{post.time}}</p>
+              <input *ngIf="edit[i]" type="time"  name="time" value="{{post.time}}" [(ngModel)]="post.time"  class="form-control">
+              
+              <h5>Piattaforma:</h5><p *ngIf="!edit[i]">{{post.platform}}</p> 
+              <select *ngIf="edit[i]" class="form-select lg-w-25  my-2 form-control" name="platform" value="{{post.time}}" aria-label="Default select example" [(ngModel)]="post.platform">
+                <option value="">Piattaforma</option>
+                <option value="Xbox">Xbox</option>
+                <option value="Playstation">Playstation</option>
+                <option value="PC">PC</option>
+                <option value="Nintendo Switch">Nintendo Switch</option>
+              </select>
+              
+              <h5>Players Richiesti:</h5><p *ngIf="!edit[i]">{{post.players}}</p>
+              <select *ngIf="edit[i]" class="form-select lg-w-25  my-2" value="{{post.players}}"  name="players" aria-label="Default select example" [(ngModel)]="post.players">
+                <option value="">Players Richiesti</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="12">11</option>
+              </select>
+              
+              <h5>Gamertag:</h5><p *ngIf="!edit[i]">{{post.gamertag}}</p>
+              <input *ngIf="edit[i]" type="text" value="{{post.gamertag}}" name="date" [(ngModel)]="post.gamertag" class="form-control">
+              
+              <h5>Gioco:</h5><p *ngIf="!edit[i]">{{post.text}}</p>
+              <input *ngIf="edit[i]" type="text" value="{{post.text}}" name="text" [(ngModel)]="post.text" class="form-control" >
+              
+              <h5>Commenti:</h5><p *ngIf="!edit[i]">{{post.description}}</p>
+              <input *ngIf="edit[i]" type="text" value="{{post.description}}" name="description" [(ngModel)]="post.description" class="form-control" >
+              
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <div >
+                <div *ngIf="checkPrenotato(i)">
+                  <button *ngIf="checkId(i)" (click)="prenota(i)"  class="btn btn-success my-3 ">Prenotati</button>
+                </div>
+                <button *ngIf="!checkId(i)" (click)="editPost(i)" class="btn btn-warning mx-2 my-3 "><i class="bi bi-pencil-square"></i></button>
+                <button *ngIf="!checkId(i)" (click)="deletePost(i)" class="btn btn-danger mx-2 my-3 "><i class="bi bi-trash"></i></button>
+                <button *ngIf="edit[i]" (click)="saveEdit(i)" class="btn btn-danger mx-2 my-3 ">Salva</button>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
